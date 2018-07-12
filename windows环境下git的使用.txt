@@ -1,0 +1,3 @@
+第一次在自己的电脑上（Windows环境）安装使用git，和使用github。
+关于安装方法和注意点，这篇博文介绍的很详细：
+https://www.cnblogs.com/lyr2015/p/6730476.html
