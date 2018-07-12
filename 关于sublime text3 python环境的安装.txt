@@ -1,0 +1,10 @@
+在网上copy python代码的时候，若不注意控制和检查缩进，容易出现这样的错误：
+python中出现IndentationError:unindent does not match any outer indentation level
+在win7 环境下，标准输出的默认编码不是utf-8，编写代码时，注意将标准输出的默认编码改为utf-8，代码为：
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer,encoding='utf8') #改变标准输出的默认编码
+否则出现如下错误：
+UnicodeEncodeError: 'gbk' codec can't encode character '\U0001f381' in position 63389: illegal multibyte sequence
+
+
+sublime text3 python开发环境初步配置可参考：https://www.cnblogs.com/maoxianfei/p/5709330.html
+其他更多插件配置，可参考：https://blog.csdn.net/sinat_26692807/article/details/78577401
