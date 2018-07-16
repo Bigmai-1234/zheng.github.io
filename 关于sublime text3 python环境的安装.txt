@@ -6,5 +6,5 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer,encoding='utf8') #改变标准输出的
 UnicodeEncodeError: 'gbk' codec can't encode character '\U0001f381' in position 63389: illegal multibyte sequence
 
 
-sublime text3 python开发环境初步配置可参考：https://www.cnblogs.com/maoxianfei/p/5709330.html
+sublime text3 python开发环境初步配置可参考：https://www.cnblogs.com/zhangqinwei/p/6886600.html
 其他更多插件配置，可参考：https://blog.csdn.net/sinat_26692807/article/details/78577401
