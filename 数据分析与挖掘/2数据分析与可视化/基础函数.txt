@@ -1,0 +1,21 @@
+import pandas as pd
+data=pd.read_csv(filename)
+data.mean()#均值
+data.median()#中位数
+data.quantile(q=0.25)#四分位数
+data.mode()#众数，对于众数来说有可能不是唯一的，众数可能返回有多行
+data.std()#标准差
+data.var()#方差
+data.sum()#离散数据求和会拼接起来
+data.skew()#偏态系数，负值表示平均值偏小，大部分数据大于平均值
+data.kurt()#峰度系数，以正态分布为0作为标准。负值表示比正太平缓
+
+import scipy.stats as ss
+#生成正态分布
+ss.norm
+#查看特征
+ss.norm.stats(moments ='mvsk')
+#制定横坐标返回纵坐标的值
+ss.norm.pdf(0.0)
+#累计到0-1之间的某个数，对应的横坐标的值
+ss.norm.ppf(0.8)
