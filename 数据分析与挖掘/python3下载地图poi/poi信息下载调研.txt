@@ -101,5 +101,10 @@ def getpois(cityname, keywords):
         i = i + 1
     return poilist	
 	
-最后爬取的内容可能有重复，需要这时候需要在excel中做数据->删除重复项处理。
+最后爬取的内容可能有重复，需要这时候需要在excel中做数据->删除重复项处理。也可以用以下代码：
+import pandas as pd
+def del_repeat_line(filename):
+    data = pd.read_excel(filename)
+    data = data.drop_duplicates(subset=['A'])
+    data.to_excel(filename)
 本文章对以下文章有参考：https://blog.csdn.net/qq_34464926/article/details/79128211	
