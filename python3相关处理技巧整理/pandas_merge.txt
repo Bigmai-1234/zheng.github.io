@@ -1,0 +1,15 @@
+pandas.merge(left, right, how='inner', on=None, left_on=None, right_on=None, left_index=False, right_index=False, sort=False, suffixes=('_x', '_y'), copy=True, indicator=False, validate=None)
+
+Merge DataFrame objects by performing a database-style join operation by columns or indexes.
+If joining columns on columns, the DataFrame indexes will be ignored. Otherwise if joining indexes on indexes or indexes on a column or columns, the index will be passed on.
+
+left : DataFrame
+right : DataFrame
+how : {‘left’, ‘right’, ‘outer’, ‘inner’}, default ‘inner’
+‘inner’:对两个的表交集部分进行匹配和拼接。单独只出现在一个表中的字段值不会参与匹配和拼接。
+拼接后的数据表中只包含两个表的交集，因此不存在未匹配到的NaN情况。
+
+left:左匹配,匹配不到的内容以NaN值显示
+outer模式是两个表的汇总
+left_on,right_on表示匹配的列
+
